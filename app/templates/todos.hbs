@@ -1,0 +1,8 @@
+{{outlet}}
+{{#each this.model as |todo|}}
+
+    <h6>{{todo.title}}</h6>
+    <p>{{todo.completed}}</p>
+    <small>belongs to {{todo.user.name}}</small>
+
+{{/each}}

@@ -1,0 +1,18 @@
+{{this.model.name}}
+{{this.model.address.street}}
+<hr>
+
+<button {{action "createPost" this.model}}>create</button>
+
+<hr>
+
+{{#each this.model.posts as |post|}}
+    <h5>{{post.user.name}}</h5>
+    <h4>{{post.title}}</h4>
+    <p>{{post.body}}</p>
+
+    <button {{action "updatePost" post}}>update</button>
+    <button {{action "deletePost" post}}>delete</button>
+    <button {{action "rollbackPost" post}}>undo</button>
+
+{{/each}}

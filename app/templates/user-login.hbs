@@ -1,0 +1,4 @@
+<label for="user_id">User ID : </label>
+<Input @id="user_id" @type="number" @value={{this.user_id}}/>
+<button {{action "submitID" this.user_id}}>login</button>
+{{outlet}}

@@ -1,0 +1,10 @@
+{{outlet}}
+<hr>
+{{#each this.model as |post|}}
+    <div {{action "loadPost" post.id}}>
+        <h5>{{post.user.name}}</h5>
+        <h4>{{post.title}}</h4>
+        <p>{{post.body}}</p>
+    </div>
+    <hr>
+{{/each}}

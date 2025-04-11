@@ -1,0 +1,9 @@
+<div>
+    <h5>{{this.model.user.name}}</h5>
+    <h4>{{this.model.title}}</h4>
+    <p>{{this.model.body}}</p>
+</div>
+<button {{action "loadComments"}}>comments</button>
+<div>
+    {{outlet}}
+</div>
